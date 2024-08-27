@@ -29,7 +29,7 @@ public class Ex3 : Ex
     {
         Console.WriteLine("\nRelatório:");
         Console.WriteLine($"Nome: {name}");
-        Console.WriteLine($"Média: {average % .2f}");
+        Console.WriteLine($"Média: {average:0.##}");
         Console.WriteLine($"Frequência: {frequency}%");
 
         var result = frequency >= 75 && average >= 6 ? "Aprovado" : "Reprovado";
