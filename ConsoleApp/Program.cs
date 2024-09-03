@@ -9,13 +9,14 @@ var availableExercises = new List<Ex>
     new Ex2(),
     new Ex3(),
     new Ex4(),
+    new Ex5(),
 };
 
-int input, exerciceCount = availableExercises.Count;
+int input, exerciseCount = availableExercises.Count;
 
 while (true)
 {
-    input = InputReader.ReadInt($"Digite o exercício desejado: (0 pra sair) (1 à {exerciceCount})", 0, exerciceCount);
+    input = InputReader.ReadInt($"Digite o exercício desejado: (0 pra sair) (1 à {exerciseCount})", 0, exerciseCount);
 
     if (input == 0)
         break;
