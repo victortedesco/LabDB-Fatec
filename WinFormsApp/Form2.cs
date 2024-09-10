@@ -30,6 +30,7 @@
         {
             resultsBox.Items.Clear();
             resultsBox.Items.Add("Resultados:");
+            UpdateCount();
         }
 
         private void ExitButton_Click(Object sender, EventArgs e)
@@ -48,6 +49,7 @@
             var result = $"{n1} + {n2} = {n1 + n2}";
 
             resultsBox.Items.Add(result);
+            UpdateCount();
         }
         private void SubtractButton_Click(object sender, EventArgs e)
         {
@@ -60,6 +62,7 @@
             var result = $"{n1} - {n2} = {n1 - n2}";
 
             resultsBox.Items.Add(result);
+            UpdateCount();
         }
 
         private void MultiplyButton_Click(object sender, EventArgs e)
@@ -73,6 +76,7 @@
             var result = $"{n1} * {n2} = {n1 * n2}";
 
             resultsBox.Items.Add(result);
+            UpdateCount();
         }
 
         private void DivideButton_Click(object sender, EventArgs e)
@@ -92,6 +96,7 @@
             var result = $"{n1} / {n2} = {n1 / n2:f2}";
 
             resultsBox.Items.Add(result);
+            UpdateCount();
         }
 
         private void ModuleButton_Click(object sender, EventArgs e)
@@ -111,6 +116,12 @@
             var result = $"{n1} % {n2} = {n1 % n2:f2}";
 
             resultsBox.Items.Add(result);
+            UpdateCount();
+        }
+
+        private void UpdateCount()
+        {
+            label4.Text = $"{resultsBox.Items.Count - 1} resultado(s)";
         }
     }
 }

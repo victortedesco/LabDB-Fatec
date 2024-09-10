@@ -41,6 +41,7 @@
             clearButton = new Button();
             exitButton = new Button();
             moduleButton = new Button();
+            label4 = new Label();
             SuspendLayout();
             // 
             // resultsBox
@@ -174,11 +175,21 @@
             moduleButton.UseVisualStyleBackColor = true;
             moduleButton.Click += ModuleButton_Click;
             // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(678, 395);
+            label4.Name = "label4";
+            label4.Size = new Size(78, 15);
+            label4.TabIndex = 15;
+            label4.Text = "0 resultado(s)";
+            // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label4);
             Controls.Add(moduleButton);
             Controls.Add(exitButton);
             Controls.Add(clearButton);
@@ -218,5 +229,6 @@
         private Button clearButton;
         private Button exitButton;
         private Button moduleButton;
+        private Label label4;
     }
 }
