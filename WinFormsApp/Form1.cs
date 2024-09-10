@@ -65,7 +65,7 @@ public partial class Form1 : Form
         }
         catch (Exception erro)
         {
-            MessageBox.Show("Ocorreu um erro" + erro.Message, "ERRO!", MessageBoxButtons.OK, MessageBoxIcon.Error);            
+            MessageBox.Show("Ocorreu um erro" + erro.Message, "ERRO!", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
     }
 }
